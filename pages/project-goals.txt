@@ -1,0 +1,26 @@
+Showcase skill utilizing React.js and Next.js libraries, including the following features:
+
+
+1. JSX (along with styling)
+
+2. React event handling
+
+3. Components (presentational and container)
+
+4. Props & PropTypes
+
+5. State
+
+6. Lifecycle (Components)
+
+7. Conditional Render
+
+8. Context API
+
+9. Hooks
+
+10. Forms
+
+11. HOCs
+
+12. Render Props (sharing state)

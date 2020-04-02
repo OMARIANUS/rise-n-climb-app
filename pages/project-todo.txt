@@ -1,0 +1,8 @@
+1. Implement TodoTask functionality (includes state management and DOM references). [DONE]
+
+
+2. Add sorting buttons to TodoTask.
+ [DONE]
+
+
+3. Add archival features (Archived list, Archived list button).
