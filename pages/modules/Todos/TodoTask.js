@@ -35,7 +35,7 @@ class TodoTask extends React.Component {
   render() {
     let tltStyles = []; // Array to store conditional styles for below elements
     tltStyles.push(`${this.props.isCompleted && 'completed'}`);
-    tltStyles.push(`${this.state.isMoreOptsOn && 'parent-nods-activated'}`);
+    tltStyles.push(`${this.state.isMoreOptsOn && 'parent-mods-activated'}`);
     tltStyles.push(`${this.state.isMoreOptsOn && 'mods-activated'}`);
     tltStyles.push(`${!this.state.isHover && !this.state.isMoreOptsOn && 'hidden'}`);
 

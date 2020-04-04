@@ -21,8 +21,8 @@ function NavCard(props){
         }
 
         div img {
-          height: 60%;
-          width: 60%;
+          height: 125px;
+          width: 200px;
           margin: 0 auto;
           margin-bottom: 20px;
         }

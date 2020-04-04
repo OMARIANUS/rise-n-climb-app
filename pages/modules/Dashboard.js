@@ -17,10 +17,10 @@ class Dashboard extends React.Component {
         <h1>Dashboard</h1>
         <p>Here are the tools at your fingertips to help you get there.</p>
 
-        <NavCard linkHref="./Todos" imgSrc="/todos-icon.png" caption="To-do Lists" />
-        <NavCard linkHref="./Goals" imgSrc="/goals-icon.png" caption="S.M.A.R.T. Goals" />
-        <NavCard linkHref="" imgSrc="/habits-icon.png" caption="Habit Tracking" />
-        <NavCard linkHref="" imgSrc="/time-icon.png" caption="Time Management" />
+        <NavCard linkHref="./Todos" imgSrc="/todos-icon.svg" caption="To-do Lists" />
+        <NavCard linkHref="./Goals" imgSrc="/goals-icon.svg" caption="S.M.A.R.T. Goals" />
+        <NavCard linkHref="" imgSrc="/habits-icon.svg" caption="Habit Tracking" />
+        <NavCard linkHref="" imgSrc="/time-icon.svg" caption="Time Management" />
       </Layout>
     );
   }
