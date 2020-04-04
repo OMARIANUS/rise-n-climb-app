@@ -5,6 +5,7 @@ function Layout(props) {
     <>
       <Head>
         <title>{props.title}</title>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
       </Head>
 
       <header>
@@ -16,7 +17,7 @@ function Layout(props) {
       <style jsx global>{`
         /* Just to be clear, react-datepicker next/prev buttons have !important :) */
 
-        * { font-family: 'Century Gothic', sans-serif; }
+        * { font-family: 'Montserrat', sans-serif; }
 
         html, body {
           margin: 0 auto;
