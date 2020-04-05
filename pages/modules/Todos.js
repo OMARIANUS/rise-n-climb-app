@@ -1,8 +1,6 @@
-import Head from 'next/head';
-import Link from 'next/link';
-import UniqID from 'uniqid';
 import Layout from '../Layout';
 import TodoList from './Todos/TodoList';
+import UniqID from 'uniqid';
 
 class Todos extends React.Component {
   constructor() {

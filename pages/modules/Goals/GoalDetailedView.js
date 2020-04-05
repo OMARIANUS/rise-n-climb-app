@@ -1,7 +1,6 @@
 import Layout from '../../Layout';
 import Milestone from './Milestone';
 import DatePicker from 'react-datepicker';
-import UniqID from 'uniqid';
 
 import './css/react-datepicker.css';
 

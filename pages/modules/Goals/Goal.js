@@ -1,5 +1,3 @@
-import Link from 'next/link';
-
 function Goal(props){
   return (
     <div className="goal-entry">

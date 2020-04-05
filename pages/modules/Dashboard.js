@@ -1,5 +1,3 @@
-import Head from 'next/head';
-import Link from 'next/link';
 import Layout from '../Layout';
 import NavCard from './comps/NavCard';
 

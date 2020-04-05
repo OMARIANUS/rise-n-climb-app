@@ -1,6 +1,5 @@
-import Link from 'next/link';
-import UniqID from 'uniqid';
 import TodoTask from './TodoTask';
+import UniqID from 'uniqid';
 
 class TodoList extends React.Component {
   constructor() {

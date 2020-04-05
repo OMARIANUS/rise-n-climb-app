@@ -1,8 +1,7 @@
-import Link from 'next/link';
 import Layout from '../../Layout';
 import Milestone from './Milestone';
-import UniqID from 'uniqid';
 import DatePicker from 'react-datepicker';
+import UniqID from 'uniqid';
 
 import './css/react-datepicker.css';
 
