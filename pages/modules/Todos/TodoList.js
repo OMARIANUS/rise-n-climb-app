@@ -56,7 +56,7 @@ class TodoList extends React.Component {
             newTasks[id + 1].orderIndex--;
           }
 
-          else if (method === 'edit')
+          else if (method === 'edit') {
             try {
               newTasks[id].text = event.target.value;
             }
