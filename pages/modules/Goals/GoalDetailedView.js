@@ -21,13 +21,7 @@ class GoalDetailedView extends React.Component {
       let milestones = this.state.milestones;
       let newMilestones = milestones.map(item => { return { ...item } });
 
-      try {
-        newMilestones[id].completed = !newMilestones[id].completed;
-      }
-      catch(err) {
-        window.alert(err);
-      }
-
+      newMilestones[id].completed = !newMilestones[id].completed;
       return { milestones: newMilestones }
     });
   }

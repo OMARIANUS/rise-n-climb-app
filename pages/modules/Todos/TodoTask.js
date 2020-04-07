@@ -35,7 +35,7 @@ class TodoTask extends React.Component {
     tltStyles.push(`${this.props.isCompleted && 'completed'}`);
     tltStyles.push(`${this.state.isMoreOptsOn && 'parent-mods-activated'}`);
     tltStyles.push(`${this.state.isMoreOptsOn && 'mods-activated'}`);
-    tltStyles.push(`${!this.state.isHover && !this.state.isMoreOptsOn && 'hidden'}`);
+    tltStyles.push(`${!this.state.isHover && !this.state.isMoreOptsOn && 'visibility-factor'}`);
 
     return (
       <div
@@ -103,7 +103,7 @@ class TodoTask extends React.Component {
             filter: contrast(0);
           }
 
-          .hidden {
+          .visibility-factor {
             visibility: hidden;
           }
 
@@ -131,27 +131,36 @@ class TodoTask extends React.Component {
             display: inline-block;
           }
 
-          @media screen and (min-width: 0px) {
-            .more-opts-button {
-              display: inline-block;
-            }
-
-            .modify-buttons {
-              display: none;
-            }
+          .more-opts-button {
+            display: none;
           }
 
-          @media screen and (min-width: 720px) {
+          .modify-buttons {
+            display: inline-block;
+          }
+
+          @media screen and (min-width: 801px) {
             div.todo-list-task-buttons {
               width: 9rem;
             }
+          }
+
+          @media screen and (max-width: 800px) {
+            img {
+              height: 14px;
+              width: 14px;
+            }
 
             .more-opts-button {
-              display: none;
+              display: inline-block;
             }
 
             .modify-buttons {
-              display: inline-block;
+              display: none;
+            }
+
+            .visibility-factor {
+              visibility: visible;
             }
           }
         `}</style>

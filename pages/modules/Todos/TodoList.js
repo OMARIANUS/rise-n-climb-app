@@ -56,14 +56,8 @@ class TodoList extends React.Component {
             newTasks[id + 1].orderIndex--;
           }
 
-          else if (method === 'edit') {
-            try {
-              newTasks[id].text = data;
-            }
-            catch(err) {
-              window.alert(err);
-            }
-          }
+          else if (method === 'edit')
+            newTasks[id].text = data;
 
           else if (method === 'toggle')
             newTasks[id].completed = !newTasks[id].completed;
