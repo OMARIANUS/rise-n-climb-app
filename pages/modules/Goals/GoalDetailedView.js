@@ -22,7 +22,7 @@ class GoalDetailedView extends React.Component {
       let newMilestones = milestones.map(item => { return { ...item } });
 
       try {
-        newMilestones[id].completed = event.target.checked;
+        newMilestones[id].completed = !newMilestones[id].completed;
       }
       catch(err) {
         window.alert(err);

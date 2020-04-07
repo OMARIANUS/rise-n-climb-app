@@ -40,7 +40,7 @@ class TodoList extends React.Component {
     });
   }
 
-  handleChange(isTask = false, id, method) {
+  handleChange(isTask = false, id, method, data) {
     this.setState(pvStt => {
       let newTasks = pvStt.tasks;
 
@@ -58,7 +58,7 @@ class TodoList extends React.Component {
 
           else if (method === 'edit') {
             try {
-              newTasks[id].text = event.target.value;
+              newTasks[id].text = data;
             }
             catch(err) {
               window.alert(err);
@@ -66,7 +66,7 @@ class TodoList extends React.Component {
           }
 
           else if (method === 'toggle')
-            newTasks[id].completed = event.target.checked;
+            newTasks[id].completed = !newTasks[id].completed;
 
           newTasks.sort((a, b) => { return a.orderIndex - b.orderIndex; });
           return { tasks: newTasks }
