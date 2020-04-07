@@ -57,7 +57,13 @@ class TodoList extends React.Component {
           }
 
           else if (method === 'edit')
-            newTasks[id].text = event.target.value;
+            try {
+              newTasks[id].text = event.target.value;
+            }
+            catch(err) {
+              window.alert(err);
+            }
+          }
 
           else if (method === 'toggle')
             newTasks[id].completed = event.target.checked;
