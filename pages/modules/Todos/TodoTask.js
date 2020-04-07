@@ -54,7 +54,7 @@ class TodoTask extends React.Component {
           type="text"
           value={this.props.taskText}
           disabled={this.props.isCompleted || this.state.isMoreOptsOn}
-          onChange={() => this.props.handler(true, this.props.sortId, 'edit')}
+          onChange={event => this.props.handler(true, this.props.sortId, 'edit')}
           onBlur={this.checkText}
         />
 

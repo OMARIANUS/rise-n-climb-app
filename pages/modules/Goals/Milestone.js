@@ -4,7 +4,7 @@ function Milestone(props) {
        <input
          type="checkbox"
          checked={props.isCompleted}
-         onChange={() => props.handler('check', props.sortId)}
+         onChange={event => props.handler('check', props.sortId)}
        />
        <span>{props.text}</span>
 
