@@ -140,6 +140,7 @@ class TodoList extends React.Component {
 
           .todo-list-task input[type="text"] {
             width: 85%;
+            min-width: 45%;
             color: white;
             border-width: 0px;
             background-color: transparent;

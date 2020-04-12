@@ -67,6 +67,7 @@ function Layout(props) {
         }
 
         .rd-corrector {
+          width: 88%;
           padding: 10px;
           border: 1px solid silver;
           border-radius: 5px;
