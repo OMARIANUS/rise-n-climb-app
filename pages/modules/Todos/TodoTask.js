@@ -107,13 +107,10 @@ class TodoTask extends React.Component {
             visibility: hidden;
           }
 
-          .completed {
-            text-decoration: line-through;
-            text-decoration-color: white;
-          }
-
           .completed input[type="text"] {
             color: gray;
+            text-decoration: line-through;
+            text-decoration-color: white;
           }
 
           .parent-mods-activated {
