@@ -40,7 +40,7 @@ class TodoList extends React.Component {
     });
   }
 
-  handleChange(isTask = false, id, method) {
+  handleChange(isTask = false, id, method, data) {
     this.setState(pvStt => {
       let newTasks = pvStt.tasks;
 
@@ -57,10 +57,10 @@ class TodoList extends React.Component {
           }
 
           else if (method === 'edit')
-            newTasks[id].text = event.target.value;
+            newTasks[id].text = data;
 
           else if (method === 'toggle')
-            newTasks[id].completed = event.target.checked;
+            newTasks[id].completed = !newTasks[id].completed;
 
           newTasks.sort((a, b) => { return a.orderIndex - b.orderIndex; });
           return { tasks: newTasks }
@@ -140,6 +140,7 @@ class TodoList extends React.Component {
 
           .todo-list-task input[type="text"] {
             width: 85%;
+            min-width: 45%;
             color: white;
             border-width: 0px;
             background-color: transparent;
